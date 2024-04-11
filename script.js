@@ -49,13 +49,13 @@
 
 // const longestString = (string) => {
 //   let newString = string.split(" ");
-//   longestWord = newString[0];
-//   for (let i = 1; i < newString.length; i++) {
+//   longestWord = "";
+//   for (let i = 0; i < newString.length; i++) {
 //     if (newString[i].length > longestWord.length) {
 //       longestWord = newString[i];
 //     }
 //   }
-//   return longestWord;
+//   return longestWord ? longestWord:"String daxil edin";
 // };
 // let string = "Web Development Tutorial ";
 
@@ -63,18 +63,21 @@
 
 //! 4.Sətirdə hər sözün ilk hərfini böyük hərflə yazmaq üçün JavaScript funksiyasını yazın.
 
-// const capitalize_Words = (string) => {
-//   let arr = string.split(" ");
-//   let newString = [];
-//   for (let i = 0; i < arr.length; i++) {
-//     arr[i].split("");
-//   }
-
-//   return newString;
+// const capitalizeWord = (string) => {
+//     let arr = string.split(" ");
+//     let newString = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         let capWord = arr[i][0].toUpperCase() + arr[i].substring(1);
+//         newString.push(capWord);
+//     }
+ 
+//     return newString.length ? newString.join(" ") : "String daxil edin";
 // };
 
-// console.log(capitalize_Words("js string exercises"));
+// console.log(capitalizeWord("js string exercises")); 
 
+
+  
 //! 5.Verilmish stringdən müəyyən sayda sözə kəsmək üçün JavaScript funksiyasını yazın.
 
 // const truncate = (str, num) => {
